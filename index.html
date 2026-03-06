@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Gateway | Next-Gen Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <main id="app">
+        <div id="ui-layer">
+            <section id="landing" class="active">
+                <h1 class="glitch" data-text="NEURAL GATE">NEURAL GATE</h1>
+                <p>Advanced Biometric & Data Encryption</p>
+                <button onclick="toggleForm('login')">INITIALIZE</button>
+            </section>
+
+            <section id="form-box" class="hidden">
+                <div class="glass-card">
+                    <div id="login-fields">
+                        <h2>SYSTEM LOGIN</h2>
+                        <input type="email" placeholder="Access ID">
+                        <input type="password" placeholder="Passkey">
+                        <button class="primary-btn">DECRYPT</button>
+                        <p onclick="toggleForm('signup')">Need Access? Create Node</p>
+                    </div>
+
+                    <div id="signup-fields" class="hidden">
+                        <h2>CREATE NODE</h2>
+                        <input type="text" placeholder="Full Identity">
+                        <input type="email" placeholder="Email Address">
+                        <input type="password" placeholder="Security Cipher">
+                        <button class="primary-btn">ENROLL</button>
+                        <p onclick="toggleForm('login')">Already Synced? Login</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
